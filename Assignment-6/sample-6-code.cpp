@@ -14,6 +14,10 @@
 #                   who helped you.
 #******************************************************************************/
 
+
+// RUN COMMAND:
+// g++ sample-6-code.cpp && ./a.out; rm a.out
+
 #include <iostream>
 #include <iomanip>
 #include <cmath>
