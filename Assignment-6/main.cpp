@@ -49,8 +49,8 @@ int main() {
     cout << endl;
     
     bool vending = true;
+    float balanceUSD = 0.0;
     do {
-        float balanceUSD = 0.0;
         bool nextCoin = true;
         do {
             int cents = 0;
