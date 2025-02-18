@@ -2,14 +2,9 @@
 
 # Assignment 6: Vending Machine
 
-| Academic Integrity You may NOT, under any circumstances, begin a programming assignment by looking for completed code on StackOverflow or Chegg or any such website, which you can claim as your own.  Please check out the [Student Code of Conduct at PCC.](https://www.pcc.edu/student-conduct/conduct/quick-view-of-policy/) The only way to learn to code is to do it yourself. The assignments will be built from examples during the lectures, so ask for clarification during class if something seems confusing. If you start with code from another source and just change the variable names or other content to make it look original, you will receive a zero on the assignment. I may ask you to explain your assignment verbally. If you cannot satisfactorily explain what your code does, and answer questions about why you wrote it in a particular way, then you should also expect a zero.  |
-| :---- |
-
 ## Introduction
 
 A Vending Machine sells Coffee and Tea for $0.25. You can buy coffee or tea, enter the quantity and get your balance after the machine has dispensed your drink.
-
-![][image1]
 
 ## Purpose
 
@@ -63,12 +58,108 @@ After completing this assignment you will be able to:
 
 ## Criteria for Success
 
-* Test your program using the following sample runs, making sure you get the same output when using the given inputs (in **blue**):
+* Test your program using the following sample runs, making sure you get the same output when using the given inputs:
 
-| Welcome to my Coffee/Tea Vending Machine\! Enter coins \- 5, 10, or 25 only: 5 Enter coins \- 5, 10, or 25 only: 25 Enter coins \- 5, 10, or 25 only: 25 Enter coins \- 5, 10, or 25 only: 5 Enter coins \- 5, 10, or 25 only: 10 Enter coins \- 5, 10, or 25 only: 10 Enter coins \- 5, 10, or 25 only: 0 Your balance is $0.80 Please pick an option ($0.25 each):     C/c: Coffee     T/t: Tea     Q/q: Quit \>\> k Invalid Option\! Please choose a valid option\! \>\> 9 Invalid Option\! Please choose a valid option\! \>\> c How many would you like? \>\> f Invalid Option\! How many would you like? \>\> 2  Your total: $0.50 Your balance: $0.30 Thank you for using my Vending Machine Program\! |
-| :---- |
-| Welcome to my Coffee/Tea Vending Machine\! Enter coins \- 5, 10, or 25 only: 5 Enter coins \- 5, 10, or 25 only: 25 Enter coins \- 5, 10, or 25 only: 0 Your balance is $0.30 Please pick an option ($0.25 each):     C/c: Coffee     T/t: Tea     Q/q: Quit \>\> **c**  How many would you like? \>\> **2** Your total is $0.50 Your balance is $0.30 Not enough change\!\! Please add more coins. Enter coins \- 5, 10, or 25 only: 5 Enter coins \- 5, 10, or 25 only: 25 Enter coins \- 5, 10, or 25 only: 0 Your balance: $0.60 Please pick an option ($0.25 each):     C/c: Coffee     T/t: Tea     Q/q: Quit \>\> **T** How many would you like? \>\> **1** Your total is $0.25 Your balance is $0.35 Thank you for using my Vending Machine Program\! |
-| Welcome to my Coffee/Tea Vending Machine\! Enter coins \- 5, 10, or 25 only: 5 Enter coins \- 5, 10, or 25 only: 25 Enter coins \- 5, 10, or 25 only: 0 Your balance is $0.30 Please pick an option ($0.25 each):     C/c: Coffee     T/t: Tea     Q/q: Quit \>\> **q** Your total is $0 Your balance is $0.30 Thank you for using my Vending Machine Program\! |
+## SAMPLE RUN 1
+```
+Welcome to my Coffee/Tea Vending Machine!
+
+Enter coins - 5, 10, or 25 only: 5
+Enter coins - 5, 10, or 25 only: 25
+Enter coins - 5, 10, or 25 only: 25
+Enter coins - 5, 10, or 25 only: 5
+Enter coins - 5, 10, or 25 only: 10
+Enter coins - 5, 10, or 25 only: 10
+Enter coins - 5, 10, or 25 only: 0
+
+Your balance is $0.80
+
+Please pick an option ($0.25 each):
+    C/c: Coffee
+    T/t: Tea
+    Q/q: Quit
+>> k
+Invalid Option! Please choose a valid option!
+>> 9
+Invalid Option! Please choose a valid option!
+>> c
+How many would you like?
+>> f
+Invalid Option!
+How many would you like?
+>> 2
+
+Your total: $0.50
+Your balance: $0.30
+
+Thank you for using my Vending Machine Program!
+```
+
+## SAMPLE RUN 2
+```
+Welcome to my Coffee/Tea Vending Machine!
+
+Enter coins - 5, 10, or 25 only: 5
+Enter coins - 5, 10, or 25 only: 25
+Enter coins - 5, 10, or 25 only: 0
+
+Your balance is $0.30
+
+Please pick an option ($0.25 each):
+    C/c: Coffee
+    T/t: Tea
+    Q/q: Quit
+>> c
+
+How many would you like?
+>> 2
+
+Your total is $0.50
+Your balance is $0.30
+Not enough change!! Please add more coins.
+
+Enter coins - 5, 10, or 25 only: 5
+Enter coins - 5, 10, or 25 only: 25
+Enter coins - 5, 10, or 25 only: 0
+
+Your balance: $0.60
+
+Please pick an option ($0.25 each):
+    C/c: Coffee
+    T/t: Tea
+    Q/q: Quit
+>> T
+
+How many would you like?
+>> 1
+
+Your total is $0.25
+Your balance is $0.35
+
+Thank you for using my Vending Machine Program!
+```
+
+## SAMPLE RUN 3
+```
+Welcome to my Coffee/Tea Vending Machine!
+
+Enter coins - 5, 10, or 25 only: 5
+Enter coins - 5, 10, or 25 only: 25
+Enter coins - 5, 10, or 25 only: 0
+Your balance is $0.30
+
+Please pick an option ($0.25 each):
+    C/c: Coffee
+    T/t: Tea
+    Q/q: Quit
+>> q
+
+Your total is $0
+Your balance is $0.30
+
+Thank you for using my Vending Machine Program!
+```
+
 
 * Check out Sample Assignment A06 \- [Algorithmic Design document](https://docs.google.com/document/d/1cKG5bB-L28L3roxy1Vt7lQLLPrVVeIGcsy4_tzskOkw/edit?usp=sharing)
 
